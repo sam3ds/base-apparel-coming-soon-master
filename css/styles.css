@@ -19,21 +19,21 @@
 }
 
 .container img {
-    width: 42%;
+    width: 650px;
 }
 
 .container .card-text {
     width: 100%;
-    padding: 3rem 10rem 0 6rem;
+    padding: 3rem 15rem 0 10rem;
 }
 
 .container .card-text img {
-    width: 120px;
-    margin-bottom: 6rem;
+    width: 150px;
+    margin-bottom: 8rem;
 }
 .container .card-text h1.pink {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 300;
     letter-spacing: 1rem;
     color: hsl(0, 36%, 70%);
@@ -42,7 +42,7 @@
 
 .container .card-text h1.black {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 600;
     letter-spacing: 1rem;
     line-height: 1.2;
@@ -51,9 +51,9 @@
 
 .container .card-text p {
     margin-top: 1.5rem;
-    max-width: 22rem;
-    font-size: 14px;
-    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 15px;
+    line-height: 2;
     color: hsl(0, 36%, 70%);
 }
 
@@ -61,25 +61,46 @@
     border-style: solid;
     border-color: hsl(0, 36%, 70%);
     border-width: 1px;
-    border-radius: 25px;
+    border-radius: 28px;
+    display: flex;
+    /* overflow: hidden; */
+    height: 3.5rem;
+    position: relative;
 }
 
 .container .card-text .email input {
     background-color: rgba(0, 0, 0, 0);
     border-style: none;
-    
+    width: 100%;
+    color: hsl(0, 36%, 70%);
+    padding: 0 2.5rem
 }
 
 .container .card-text .email input:focus {
     outline: none;
+    
 }
 
 .container .card-text .email button {
-    background: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    background: linear-gradient(to right,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     color: #fff;
     border-style: none;
-    padding: .7rem 2rem;
-    border-radius: 18px;
+    padding: 1.2rem 2.6rem;
+    border-radius: 26px;
+    margin-left: auto;
+    font-size: 1rem;
+    position: relative;
+    right: -0.5%;
+}
+
+.container .card-text .email button:hover {
+    cursor: pointer;
+    background: hsl(0, 82%, 91%);
+    transform: scale(1.1);
+    position:absolute;
+    right: 0;
+    z-index: 90;
+    box-shadow: 0 15px 25px hsl(0, 36%, 70%);
 }
 
 
