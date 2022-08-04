@@ -18,6 +18,14 @@
     background-size:contain;
 }
 
+.container img:nth-child(1) {
+    display: none;
+}
+
+.container img:nth-child(3) {
+    display: none;
+}
+
 .container img {
     width: 650px;
 }
@@ -28,6 +36,7 @@
 }
 
 .container .card-text img {
+    display: block;
     width: 150px;
     margin-bottom: 8rem;
 }
@@ -81,6 +90,16 @@
     
 }
 
+.fa-circle-exclamation {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto 0;
+    padding: 0 1rem;
+    color: hsl(0, 93%, 68%);
+    position: relative;
+    display: none;
+}
+
 .container .card-text .email button {
     background: linear-gradient(to right,hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     color: #fff;
@@ -91,23 +110,86 @@
     font-size: 1rem;
     position: relative;
     right: -0.5%;
+    transition: 0.3s ease;
 }
 
 .container .card-text .email button:hover {
     cursor: pointer;
     background: hsl(0, 82%, 91%);
     transform: scale(1.1);
-    position:absolute;
     right: 0;
     z-index: 90;
     box-shadow: 0 15px 25px hsl(0, 36%, 70%);
 }
 
+.container .card-text .error-message p {
+    padding: 0 2rem;
+    color: hsl(0, 93%, 68%);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    
+    .container img:nth-child(1) {
+        display: block;
+        width: 100px;
+        padding: 2rem;
+    }
+
+    .container img:nth-child(2) {
+        display: none;
+    }
+
+    .container img:nth-child(3) {
+        display: block;
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .card-text {
+        padding: 2rem;
+        text-align: center;
+        width: 90%;
+    }
+
+    .container .card-text img {
+        display: none;
+    }
+
+    .container .card-text h1.pink {
+        font-size: 2.5rem;
+        margin-bottom: 0.2rem;
+        padding: 0;
+    }
+    
+    .container .card-text h1.black {
+        font-size: 2.5rem;
+    }
+
+    .container .card-text p {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 13px;
+    }
+    
+    .container .card-text .email input {
+        padding: 0 1rem;
+    }
+    
 
 
-
-
-
+}
 
 
 
