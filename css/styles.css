@@ -33,6 +33,7 @@
 .container .card-text {
     width: 100%;
     padding: 3rem 15rem 0 10rem;
+
 }
 
 .container .card-text img {
@@ -160,7 +161,7 @@
     .container .card-text {
         padding: 2rem;
         text-align: center;
-        width: 90%;
+        width: auto;
     }
 
     .container .card-text img {
